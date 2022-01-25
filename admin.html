@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminsitrador</title>
+</head>
+<body>
+    <form method="post" action="registro.php">
+    <h3>Bienvenido Adminsitrador</h3>
+    <script type ="text/javascript"> 
+    var fecha =new Date();
+    document.write("Incio de sesión "+
+    fecha.getDate()+"/"+(fecha.getMonth()+1)+"/"+fecha.getFullYear());
+    </script>
+    <br><h3>Registro de usuario</h3>
+    <h5>usuario</h5>
+    <input type="text" name="ref1usuario" placeholder=" Ingresar usuario" required>
+    <br><h5>Contraseña</h5>
+    <input type="password" name="ref1password" placeholder=" Ingresar contraseña" required>
+    <br><h5>Rol</h5>
+    <input type="text" name="ref1rol" placeholder=" Ingresar el rol" required>
+    <br><h5>Cedula</h5>
+    <input type="text" name="ref1cedula" placeholder=" Ingresar el n° de cedula" required>
+    <br />
+
+    <input type="submit" value="Registrar" name= "reflogin" >
+</form>
+</body>
+</html>
